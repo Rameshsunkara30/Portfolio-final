@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a192f;
+  scroll-behavior: smooth;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+.profile-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.half-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 16px solid #00f0ff;
+  border-radius: 300px 300px 0 0;
+}
+
+.top-half {
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-half {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+
+
+
+
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4ac7a7;
+}
+
+
+
+
+
+
+
+
+
+
+.glowing-background {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.4), rgba(0, 0, 0, 0));
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 10px solid #00f0ff;
+}
+
+
+
+
+
+.profile-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-border {
+  position: absolute;
+  width: 160px; /* Slightly larger than the image */
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #ff5733; /* Customize color */
+  animation: rotate 2s linear infinite;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+/* Ensure navbar links are visible on mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+  
+  nav .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .glow-text {
+  text-shadow: 0 0 2px #64ffda, 0 0 2px #64ffda, 0 0 4px #64ffda;
+}
+  
+  nav .space-x-8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

@@ -220,7 +220,7 @@ function App() {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 1.2 }}
                 className="hidden sm:block bg-[#64ffda] text-[#0a192f] px-8 py-3 rounded-full font-semibold hover:bg-[#64ffda]/90 transition-colors sm:block"
-                onClick={() => window.open(ResumeFinal)}
+                onClick={() => window.open(Resume)}
               >
                 Download CV
               </motion.button>
@@ -268,7 +268,7 @@ function App() {
                 <img 
                   src={Profile}
                   alt="Profile"
-                  className="absolute top-[-105px] left-1/2 transform -translate-x-1/2 w-[340px] h-[400px] object-cover rounded-full"
+                  className="absolute top-[-115px] left-1/2 transform -translate-x-1/2 w-[340px] h-[410px] object-cover rounded-full"
                 />
               </div>
             </motion.div>
@@ -283,7 +283,7 @@ function App() {
         className="flex justify-center sm:hidden text-center mb-20"
       >
         <motion.button
-          onClick={() => window.open(ResumeFinal)}
+          onClick={() => window.open(Resume)}
           className="bg-[#64ffda] text-[#0a192f] px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#64ffda]/90 transition-colors"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.2 }}

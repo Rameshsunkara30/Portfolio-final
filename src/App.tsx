@@ -128,7 +128,7 @@ function App() {
               transition={{ duration: 1.5}}
             >
               <h2 className="text-xl text-[#64ffda] mb-2">This Is</h2>
-              <h1 className="text-5xl font-bold mb-4 ">RAMESH </h1>
+              <h1 className="text-5xl font-bold mb-4 ">RAMESH SUNKARA</h1>
 
 
 

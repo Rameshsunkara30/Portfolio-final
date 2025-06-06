@@ -15,7 +15,7 @@ import PowerBIProject from './assets/PowerBI Project.pdf'
 import TableauProject from './assets/Tableau project.pdf'
 import ExcelProject from './assets/Excel Project.pdf'
 import Profile from './assets/Profilenavy.png'
-import Resume from './assets/Resume.pdf'
+import Resume from './assets/ResumeFinal.pdf'
 import AIToolsCertificate from './assets/AI Tools Certificate.pdf'
 import PowerBICertificate from './assets/powerbi Certificate.pdf'
 import SQLCertificate from './assets/SQL Certificate.pdf'
@@ -220,7 +220,7 @@ function App() {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 1.2 }}
                 className="hidden sm:block bg-[#64ffda] text-[#0a192f] px-8 py-3 rounded-full font-semibold hover:bg-[#64ffda]/90 transition-colors sm:block"
-                onClick={() => window.open(Resume)}
+                onClick={() => window.open(ResumeFinal)}
               >
                 Download CV
               </motion.button>
@@ -283,7 +283,7 @@ function App() {
         className="flex justify-center sm:hidden text-center mb-20"
       >
         <motion.button
-          onClick={() => window.open("https://pdfhost.io/v/BV8YCaatXg_MyResume", "_blank")}
+          onClick={() => window.open(ResumeFinal)}
           className="bg-[#64ffda] text-[#0a192f] px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#64ffda]/90 transition-colors"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.2 }}
